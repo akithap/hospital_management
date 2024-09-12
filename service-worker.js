@@ -1,6 +1,6 @@
 const CACHE_NAME = "my-site-cache-v1"; // Name of the cache
 const urlsToCache = [
-  "/", // Cache the root page
+  "/hospital_management/", // Cache the root page
   "/index.html",
   "/styles.css",
   "/script.js",
