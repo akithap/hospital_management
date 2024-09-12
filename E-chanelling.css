@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.block1{
+    padding-top: 28vh;
+}
+.block1 .title{
+    font-family: "Inter";
+    font-size: 3em;
+    color: rgb(8, 139, 133);
+    text-align: left;
+    margin-left: 5vh;
+}
+.block1 .paragraph{
+    font-family: "Inter";
+    font-size: 1em;
+    margin-left: 10vh;
+    width: 80%;
+}
+.parent{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 110, 106);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+    column-gap: 40px;
+}
+#name, #type, #date{
+    width: 30vh;
+    height: 6vh;
+    text-align: center;
+    font-family: "Inter";
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.dropbtn{
+    width: 30vh;
+    height: 6.5vh;
+    text-align: center;
+    font-family: "Inter";
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.search{
+    background: white;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.search a{
+    text-decoration: none;
+    color: rgb(17, 88, 85);
+    font-family: "Inter";
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Inter";
+}
+.dropdown-content a:hover {
+    background-color: rgb(18, 92, 88);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: rgb(18, 92, 88);
+    color: white;
+    border: 1px solid rgb(18, 92, 88);
+}
+.block2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 50px;
+    gap: 50px;
+    margin-top: 5vh;
+}
+.box1, .box2, .box3, .box4{
+    background-color: lightgray;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.block2 img{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.parenttitle{
+    background-color: rgb(17, 155, 148);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.box1 .title, .box2 .title, .box3 .title, .box4 .title{
+    font-family: "Inter";
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px 2px 20px;;
+}
+.box1 .paragraph, .box2 .paragraph, .box3 .paragraph, .box4 .paragraph{
+    text-decoration: none;
+    color: white;
+    font-family: "Inter";
+    padding: 0 20px 10px 30px;
+}
+.bookbtn{
+    padding: 10px 25px;
+    background: rgb(14, 78, 76);
+    display: inline-block;
+    margin-bottom: 2vh;
+    width: 45%;
+    margin-left: 20%;
+}
+.bookbtn a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "Inter";
+}
+.newsletter{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: white;
+}
+.leftblock{
+    padding: 100px 10px;
+}
+.leftblock h3{
+    font-family: "Inter";
+    color: lightseagreen;
+    font-size: 3em;
+    margin: 5px 15px;
+}
+.leftblock p{
+    font-family: "Inter";
+    font-size: 15px;
+    margin: 30px 50px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+#email {
+    width: 80vh;
+    height: 30px;
+    border: 4px solid lightseagreen;
+    padding-left: 5px;
+}
+
+.button {
+    background: rgb(21, 117, 113);
+    padding: 10px 40px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inter";
+}
+@media (max-width: 800px) {
+    .newsletter{
+        grid-template-columns: 1fr;
+    }
+    .block2{
+        grid-template-columns: 1fr;
+    }
+    .block2 img{
+        object-fit: cover;
+    }
+    .block1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .block1 .title{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+        padding: 2% 5%;
+        width: auto;
+        align-items: center;
+    }
+    .block1 .paragraph{
+        font-size: 11px;
+        margin: 0;
+        width: auto;
+        padding: 2% 5%;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .bookbtn{
+        margin-left: 12%;
+        width: 60%;
+    }
+    .block2 svg{
+        height: 15px;
+    }
+    .leftblock{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .leftblock h3, .leftblock p{
+        margin: 0;
+        padding: 1% 1%;
+    }
+    .leftblock h3{
+        font-size: 1.5em;
+    }
+    .leftblock p{
+        font-size: 11px;
+    }
+    .parent{
+        flex-direction: column;
+    }
+    .container{
+        margin: 0;
+        padding: 2%;
+        flex-direction: column;
+        height: 30%;
+    }
+    .container{
+        margin: 0;
+        padding: 2%;
+        flex-direction: column;
+    }
+    .leftblock #email{
+        width: 80%;
+        border: 3px solid lightseagreen;
+        font-size: 10px;
+    }
+    .newsletter .button{
+        padding: 1.5% 8%;
+    }
+    .newsletter .button a{
+        font-size: 13px;
+    }
+}

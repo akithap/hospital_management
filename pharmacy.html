@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WELCOME to HARMONY</title>
+        <link rel="stylesheet" href="pharmacy.css">
+        <link rel="stylesheet" href="navBar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="sideBar">
+            <div class="sideBarleft">
+                <img src="media/HARMONY5.png" alt="logo of Harmony">
+            </div>
+            <div class="sideBarright">
+                <div class="search">
+                    <input type="search" id="search2" placeholder="search">
+                </div>
+                <div class="menu" onclick=showSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showSidebar(){
+                const nav = document.querySelector('.nav');
+                nav.style.display = 'flex';
+            }
+            function hideSidebar() {
+                const nav = document.querySelector('.nav');
+                nav.style.display = 'none';
+            }
+        </script>
+        <div class="nav2">
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <div class="splitter">
+                            <img src="media/HARMONY5.png" alt="" height="60px">
+                            <div class="closeMenu" onclick="hideSidebar()">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="doctors.html">DOCTORS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="pharmacy.html">PHARMACY</a></li>
+                    <li><a href="E-channelling.html">E-CHANNELING</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="register.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+        <div class="navBar">
+            <div class="navLeft">
+                <img src="media/HARMONY5.png" alt="logo of HARMONY">
+            </div>
+            <div class="navMid">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="doctors.html">DOCTORS</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="pharmacy.html">PHARMACY</a></li>
+                        <li><a href="E-channelling.html">E-CHANNELING</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Navright">
+                <input type="text" id="searchBar" placeholder="search">
+            </div>
+        </div>
+        <div class="block1">
+            <div class="title">
+                <h3>Browse Through Our Wares</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                    Discover a wide selection of medical products and services at Harmony Health Care. Our curated offerings are designed to support 
+                    your health and well-being, providing high-quality solutions tailored to your needs. Explore our range and find the right tools 
+                    to enhance your health journey.
+                </p>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="box1">
+                <img src="media/setho.jpeg" alt="hospital-image" width="100%">
+                <div class="title">
+                    SETHOSCOPES
+                </div>
+                <div class="button">
+                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+                </div> 
+            </div>
+            <div class="box2">
+                <img src="media/bp.jpg" alt="hospital-image" width="100%">
+                <div class="title">
+                    BLOOD PRESSURE MONITORS
+                </div>
+                <div class="button">
+                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+                </div>
+            </div>
+            <div class="box3">
+                <img src="media/Blood sugar.jpeg" alt="hospital-image" width="100%">
+                <div class="title">
+                    BLOOD SUGAR MONITORS
+                </div>
+                <div class="button">
+                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+                </div>
+            </div>
+            <div class="box4">
+                <img src="media/wheel chair.jpg" alt="hospital-image" width="100%">
+                <div class="title">
+                    WHEELCHAIRS
+                </div>
+                <div class="button">
+                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="subbox">
+            <div class="title">
+                <h3>Bring Your Medicine In To Your Footstep</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                    At Harmony Health Care, we offer convenient delivery services to bring your prescribed medications directly to your doorstep. <br>
+                    Our reliable and efficient service ensures you receive your medicines promptly and safely, making managing your health easier and more accessible.
+                </p>
+            </div>
+        </div>
+        <div class="parent">
+        <div class="block3">
+            <div class="container">
+                <div><input type="text" id="Fname" placeholder="Fname"></div>
+                <div><input type="text" id="Lname" placeholder="Lname"></div>
+                <div><input type="text" id="Age" placeholder="Age"></div>
+                <div class="gender">
+                    <p><b>Gender</b></p>
+                    <input type="radio" id="male" name="gender">
+                    <label for="gender">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="gender">Female</label>
+                </div>
+                <div><input type="text" id="Contactno" placeholder="Contact No (Mobile)"></div>
+                <div><input type="text" id="nic" placeholder="NIC"></div>
+                <div><input type="email" id="e-mail" placeholder="E-mail"></div>
+                <div class="prescription">
+                    <p><b>image of the prescription</b></p>
+                    <div class="button">
+                        <a href="#">Choose File</a>
+                    </div>
+                </div>
+                <div class="Comments">
+                    <input type="text" id="comments" placeholder="comments">
+                </div>
+                <div class="btnparent">
+                    <div class="submit">
+                        <a href="#">SUBMIT</a>
+                    </div>
+                    <div class="reset">
+                        <a href="#">RESET</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="newsletter">
+            <div class="leftblock">
+                <h3>subscribe to our newsletter service</h3>
+                <p>
+                    Stay connected with Harmony Health Care by subscribing to our newsletter service. Our regular updates deliver a
+                    wealth of information directly to your inbox, including the latest health tips, important hospital news,
+                    and upcoming events. By subscribing, you'll be the first to learn about new services, health promotions,
+                    and community initiatives. Our newsletter is designed to keep you informed and engaged with valuable insights
+                    that support your well-being and enhance your experience with us.
+                </p>
+                <div class="container">
+                    <input type="email" id="email" placeholder="enter your e-mail">
+                    <div class="button">
+                        <a href="#">Submit</a>
+                    </div>
+                </div>                    
+            </div>
+            <div class="rightblock">
+                <img src="media/image6.jpeg" alt="image of a nurse" width="100%">
+            </div>
+        </div>
+    </body>
+</html>

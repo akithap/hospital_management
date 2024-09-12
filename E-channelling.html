@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WELCOME to HARMONY</title>
+        <link rel="stylesheet" href="E-chanelling.css">
+        <link rel="stylesheet" href="navBar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="sideBar">
+            <div class="sideBarleft">
+                <img src="media/HARMONY5.png" alt="logo of Harmony">
+            </div>
+            <div class="sideBarright">
+                <div class="search">
+                    <input type="search" id="search2" placeholder="search">
+                </div>
+                <div class="menu" onclick=showSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showSidebar(){
+                const nav = document.querySelector('.nav');
+                nav.style.display = 'flex';
+            }
+            function hideSidebar() {
+                const nav = document.querySelector('.nav');
+                nav.style.display = 'none';
+            }
+        </script>
+        <div class="nav2">
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <div class="splitter">
+                            <img src="media/HARMONY5.png" alt="" height="60px">
+                            <div class="closeMenu" onclick="hideSidebar()">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="doctors.html">DOCTORS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="pharmacy.html">PHARMACY</a></li>
+                    <li><a href="E-channelling.html">E-CHANNELING</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="register.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+        <div class="navBar">
+            <div class="navLeft">
+                <img src="media/HARMONY5.png" alt="logo of HARMONY">
+            </div>
+            <div class="navMid">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="doctors.html">DOCTORS</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="pharmacy.html">PHARMACY</a></li>
+                        <li><a href="E-channelling.html">E-CHANNELING</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Navright">
+                <input type="text" id="searchBar" placeholder="search">
+            </div>
+        </div>
+        <div class="block1">
+            <div class="title">
+                <h3>Meet Your Family Doctor From Home</h3>
+            </div>
+            <div class="paragraph">
+                <p>
+                    Harmony Health Care offers virtual consultations, allowing you to connect with your family doctor from the comfort of your home. 
+                    Our telehealth services provide convenient access to personalized care, enabling you to discuss health concerns and receive expert advice without needing to travel.
+                </p>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="container">
+                <div><input type="text" id="name" placeholder="name"></div>
+                <div><input type="text" id="type" placeholder="specialization"></div>
+                <div class="dropdown">
+                    <button class="dropbtn">Availability</button>
+                    <div class="dropdown-content">
+                        <a href="#">Available</a>
+                        <a href="#">Not Available</a>
+                    </div>
+                </div>
+                <div><input type="date" id="date" placeholder="DD/MM/YYYY"></div>
+                <div class="search"><a href="#">Search</a></div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="box1">
+                <img src="media/hendrik (2).png" alt="hospital-image" width="100%">
+                <div class="parenttitle">
+                <div class="title">
+                    DR. HENDRICK
+                </div>
+                <div class="paragraph">
+                    <p>Specialization : Cardiologist</p>
+                </div>
+                <div class="bookbtn">
+                    <a href="#">Make An Appoinment</a>
+                </div>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="media/john.png" alt="hospital-image" width="100%">
+                <div class="parenttitle">
+                <div class="title">
+                    DR. JOHN
+                </div>
+                <div class="paragraph">
+                    <p>Specialization : Neurologist</p>
+                </div>
+                <div class="bookbtn">
+                    <a href="#">Make An Appoinment</a>
+                </div>
+                </div>
+            </div>
+            <div class="box3">
+                <img src="media/olivia.png" alt="hospital-image" width="100%">
+                <div class="parenttitle">
+                <div class="title">
+                    DR. OLIVIA
+                </div>
+                <div class="paragraph">
+                    <p>Specialization : Oncologist</p>
+                </div>
+                <div class="bookbtn">
+                    <a href="#">Make An Appoinment</a>
+                </div>
+                </div>
+            </div>
+            <div class="box4">
+                <img src="media/ada (3).png" alt="hospital-image" width="100%">
+                <div class="parenttitle">
+                <div class="title">
+                    DR. ADA
+                </div>
+                <div class="paragraph">
+                    <p>Specialization : Pediatrician</p>
+                </div>
+                <div class="bookbtn">
+                    <a href="#">Make An Appoinment</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <div class="leftblock">
+                <h3>subscribe to our newsletter service</h3>
+                <p>
+                    Stay connected with Harmony Health Care by subscribing to our newsletter service. Our regular updates deliver a
+                    wealth of information directly to your inbox, including the latest health tips, important hospital news,
+                    and upcoming events. By subscribing, you'll be the first to learn about new services, health promotions,
+                    and community initiatives. Our newsletter is designed to keep you informed and engaged with valuable insights
+                    that support your well-being and enhance your experience with us.
+                </p>
+                <div class="container">
+                    <input type="email" id="email" placeholder="enter your e-mail">
+                    <div class="button">
+                        <a href="#">Submit</a>
+                    </div>
+                </div>                    
+            </div>
+            <div class="rightblock">
+                <img src="media/image6.jpeg" alt="image of a nurse" width="100%">
+            </div>
+        </div>
+    </body>
+</html>

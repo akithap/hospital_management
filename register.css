@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.block1{
+    padding-top: 28vh;
+}
+.block1 .title{
+    font-family: "Inter";
+    font-size: 3em;
+    color: rgb(8, 139, 133);
+    text-align: left;
+    margin-left: 5vh;
+}
+.block1 .paragraph{
+    font-family: "Inter";
+    font-size: 1em;
+    margin-left: 10vh;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(23, 110, 106);
+    margin-top: 5vh;
+    padding: 4% 4%;
+}
+.block2{
+    width: 80%;
+    margin: auto;
+}
+.block2 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5vh;
+    padding: 40px 20px;
+    backdrop-filter: blur(10px);
+    background-color: white;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+#Fname, #Lname, #Age, #Contactno, #nic, #e-mail, #username, #password, #password2{
+    border: 3px solid rgb(24, 124, 119);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-size: 15px;
+    width: 80%;
+    font-family: "Inter";
+}
+.gender{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    width: 80%;
+    font-family: "Inter";
+    font-size: 15px;
+    text-align: left;
+    margin-left: 8%;
+}
+.gender p{
+    margin-bottom: 1vh;
+}
+.btnparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: cneter;
+    grid-column: 1 / -1;
+    gap: 20%;
+}
+.submit, .reset{
+    background: rgb(21, 117, 113);
+    padding: 10px 30px;
+    width: 20vh;
+    border: 1px solid rgb(21, 117, 113);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.submit a, .reset a{
+    text-decoration: none;
+    color: white;
+    font-family: "Inter";
+}
+.newsletter{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: white;
+}
+.leftblock{
+    padding: 100px 10px;
+}
+.leftblock h3{
+    font-family: "Inter";
+    color: lightseagreen;
+    font-size: 3em;
+    margin: 5px 15px;
+}
+.leftblock p{
+    font-family: "Inter";
+    font-size: 15px;
+    margin: 30px 50px;
+}
+.leftblock .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+#email {
+    width: 80vh;
+    height: 30px;
+    border: 4px solid lightseagreen;
+    padding-left: 5px;
+}
+.leftblock .container .button {
+    background: rgb(21, 117, 113);
+    padding: 10px 40px;
+}
+.leftblock .container .button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inter";
+}
+@media (max-width: 800px){
+    .newsletter{
+        grid-template-columns: 1fr;
+    }
+    .block2{
+        grid-template-columns: 1fr;
+    }
+    .block2 img{
+        object-fit: cover;
+    }
+    .block1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .block1 .title{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+        padding: 2% 5%;
+        width: auto;
+        align-items: center;
+    }
+    .block1 .paragraph{
+        font-size: 11px;
+        margin: 0;
+        width: auto;
+        padding: 2% 5%;
+        text-align: center;
+    }
+    .block2 .title{
+        font-size: 1em;
+    }
+    .block2 .paragraph{
+        font-size: 12px;
+    }
+    .block2 .button{
+        padding: 1% 3%;
+    }
+    .block2 .button a{
+        font-size: 12px;
+    }
+    .block2 svg{
+        height: 15px;
+    }
+    .block2{
+        width: 80%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    .leftblock{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .leftblock h3, .leftblock p{
+        margin: 0;
+        padding: 1% 1%;
+    }
+    .leftblock h3{
+        font-size: 1.5em;
+    }
+    .leftblock p{
+        font-size: 11px;
+    }
+    .leftblock .container{
+        margin: 0;
+        padding: 2%;
+        flex-direction: column;
+    }
+    .newsletter .button{
+        padding: 1% 3%;
+    }
+    .newsletter .button a{
+        font-size: 12px;
+    }
+    .parent{
+        height: auto;
+        flex-direction: column;
+    }
+    .submit, .reset{
+        width: 20%;
+    }
+    .block2 .container{
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 5%;
+    }
+    .subbox .title{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+        padding: 2% 5%;
+        width: auto;
+        align-items: center;
+    }
+    .subbox .paragraph{
+        font-size: 11px;
+        margin: 0;
+        width: auto;
+        padding: 2% 5%;
+        text-align: center;
+    }
+    .block2 .container > div {
+        width: 100%;
+    }
+    .btnparent{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .prescription .button{
+        width: 50%;
+    }
+    .prescription .button a{
+        text-align: center;
+        font-size: 12px;
+    }
+    .submit, .reset{
+        margin: 0;
+    }
+    .leftblock #email{
+        width: 80%;
+        border: 3px solid lightseagreen;
+        font-size: 10px;
+    }
+    .newsletter .button{
+        padding: 1.5% 8%;
+    }
+    .newsletter .button a{
+        font-size: 13px;
+    }
+}

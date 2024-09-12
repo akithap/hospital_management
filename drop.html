@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HARMONY</title>
+        <link rel="stylesheet" href="drop.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="sideBar">
+            <div class="sideBarleft">
+                <img src="media/HARMONY5.png" alt="logo of Harmony">
+            </div>
+            <div class="sideBarright">
+                <div class="search">
+                    <input type="search" id="search2" placeholder="search">
+                </div>
+                <div class="menu" onclick=showSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showSidebar(){
+                const nav = document.querySelector('.nav');
+                nav.style.display = 'flex';
+            }
+            function hideSidebar() {
+                const nav = document.querySelector('.nav');
+                nav.style.display = 'none';
+            }
+        </script>
+        <div class="nav2">
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <div class="splitter">
+                            <img src="media/HARMONY5.png" alt="" height="60px">
+                            <div class="closeMenu" onclick="hideSidebar()">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="doctors.html">DOCTORS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="pharmacy.html">PHARMACY</a></li>
+                    <li><a href="E-channelling.html">E-CHANNELING</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="register.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>
