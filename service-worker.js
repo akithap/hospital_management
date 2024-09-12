@@ -8,7 +8,7 @@ const URLs_TO_CACHE = [
   '/Hospital_management/',
   '/Hospital_management/index.html',
   '/Hospital_management/index.css',
-  '/Hospital-website/script.js',
+  '/Hospital_management/script.js',
 ];
 
 // Install event
