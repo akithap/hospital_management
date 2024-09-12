@@ -1,7 +1,7 @@
 {
     "name": "hospital",
     "short_name": "hospital",
-    "start_url" :"/hospital_management/index.html"
+    "start_url" :"/hospital_management/index.html",
     "icons": [
         {
             "src": "/hospitsl_management/icons/android-chrome-192x192.png",
