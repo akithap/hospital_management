@@ -95,7 +95,7 @@ function goToCheckout() {
         alert("Your cart is empty!");
         return;
     }
-    document.location.href="D:/apiit/web/assingment 2/Assignment final/Assignment final/paymentpage.html"
+    document.location.href="D:/apiit/web/assingment 2/Assignment final/Assignment 2 final/paymentpage.html"
 
     /*const checkoutWindow = window.open("paymentpage.html", "_blank");
     checkoutWindow.onload = () => {
