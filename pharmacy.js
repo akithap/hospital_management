@@ -33,6 +33,7 @@ const prices = {
 const cart = [];
 
 function addItemToCart(itemId, quantity) {
+    quantity = Number(quantity);
     if (quantity > 0) {
         const existingItem = cart.find(item => item.id === itemId);
         if (existingItem) {
