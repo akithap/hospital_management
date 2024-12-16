@@ -1,199 +1,447 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>WELCOME to HARMONY</title>
-        <link rel="stylesheet" href="pharmacy.css">
-        <link rel="stylesheet" href="navBar.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
-<link rel="manifest" href="./icon/site.webmanifest">
-    </head>
-    <body>
-        <div class="sideBar">
-            <div class="sideBarleft">
-                <img src="media/HARMONY5.png" alt="logo of Harmony">
+<head>
+    <title>WELCOME to HARMONY</title>
+    <link rel="stylesheet" href="pharmacy.css">
+    <link rel="stylesheet" href="navBar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="sideBar">
+        <div class="sideBarleft">
+            <img src="media/HARMONY5.png" alt="logo of Harmony">
+        </div>
+        <div class="sideBarright">
+            <div class="search">
+                <input type="search" id="search2" placeholder="search">
             </div>
-            <div class="sideBarright">
-                <div class="search">
-                    <input type="search" id="search2" placeholder="search">
-                </div>
-                <div class="menu" onclick=showSidebar()>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-                </div>
+            <div class="menu" onclick=showSidebar()>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </div>
         </div>
-        <script>
-            function showSidebar(){
-                const nav = document.querySelector('.nav');
-                nav.style.display = 'flex';
-            }
-            function hideSidebar() {
-                const nav = document.querySelector('.nav');
-                nav.style.display = 'none';
-            }
-        </script>
-        <div class="nav2">
-            <nav>
-                <ul class="nav">
-                    <li>
-                        <div class="splitter">
-                            <img src="media/HARMONY5.png" alt="" height="60px">
-                            <div class="closeMenu" onclick="hideSidebar()">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                            </div>
+    </div>
+    <script>
+        function showSidebar(){
+            const nav = document.querySelector('.nav');
+            nav.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const nav = document.querySelector('.nav');
+            nav.style.display = 'none';
+        }
+    </script>
+    <div class="nav2">
+        <nav>
+            <ul class="nav">
+                <li>
+                    <div class="splitter">
+                        <img src="media/HARMONY5.png" alt="" height="60px">
+                        <div class="closeMenu" onclick="hideSidebar()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                         </div>
-                    </li>
+                    </div>
+                </li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="doctors.html">DOCTORS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="pharmacy.html">PHARMACY</a></li>
+                <li><a href="E-channelling.html">E-CHANNELING</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="register.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="navBar">
+        <div class="navLeft">
+            <img src="media/HARMONY5.png" alt="logo of HARMONY">
+        </div>
+        <div class="navMid">
+            <nav>
+                <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="doctors.html">DOCTORS</a></li>
                     <li><a href="services.html">SERVICES</a></li>
                     <li><a href="pharmacy.html">PHARMACY</a></li>
                     <li><a href="E-channelling.html">E-CHANNELING</a></li>
                     <li><a href="aboutus.html">ABOUT US</a></li>
-                    <li><a href="register.html">CONTACT US</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
                 </ul>
             </nav>
         </div>
-    </body>
-        <div class="navBar">
-            <div class="navLeft">
-                <img src="media/HARMONY5.png" alt="logo of HARMONY">
+        <div class="Navright">
+            <input type="text" id="searchBar" placeholder="search">
+        </div>
+    </div>
+    <div class="block1">
+        <div class="title">
+            <h3>Browse Through Our Wares</h3>
+        </div>
+        <div class="paragraph">
+            <p>
+                Discover a wide selection of medical products and services at Harmony Health Care. Our curated offerings are designed to support 
+                your health and well-being, providing high-quality solutions tailored to your needs. Explore our range and find the right tools 
+                to enhance your health journey.
+            </p>
+        </div>
+    </div>
+
+
+
+
+        
+        <div id="categories">
+            <h2>Categories</h2>
+
+            
+            <section id="analgesics">
+                <h3>Analgesics</h3>
+                <div class="parent-item">
+                    <label>Paracetamol</label>
+                    <input type="number" id="paracetamol" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('paracetamol',document.getElementById('paracetamol').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="parent-item">
+                    <label>Aspirin</label>
+                    <input type="number" id="aspirin" min="0" placeholder="Quantity">
+                    <div class="button ">
+                        
+                        <button class="cart-button" onclick="addItemToCart('aspirin',document.getElementById('aspirin').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="parent-item">
+                    <label>Ibuprofen</label>
+                    <input type="number" id="ibuprofen" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('ibuprofen',document.getElementById('ibuprofen').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Diclofenac</label>
+                    <input type="number" id="diclofenac" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('diclofenac',document.getElementById('diclofenac').value)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Codeine</label>
+                    <input type="number" id="codeine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('codeine',document.getElementById('codeine').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Tramadol</label>
+                    <input type="number" id="tramadol" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('tramadol',document.getElementById('tramadol').value)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="antibiotics">
+                <h3>Antibiotics</h3>
+                <div>
+                    <label>Amoxicillin</label>
+                    <input type="number" id="amoxicillin" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('amoxicillin',document.getElementById('amoxicillin').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Ciprofloxacin</label>
+                    <input type="number" id="ciprofloxacin" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('ciprofloxacin',document.getElementById('ciprofloxacin').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Azithromycin</label>
+                    <input type="number" id="azithromycin" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('azithromycin',document.getElementById('azithromycin').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Doxycycline</label>
+                    <input type="number" id="doxycycline" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('doxycycline',document.getElementById('doxycycline').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Cephalexin</label>
+                    <input type="number" id="cephalexin" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('cephalexin',document.getElementById('cephalexin').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Metronidazole</label>
+                    <input type="number" id="metronidazole" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('metronidazole',document.getElementById('metronidazole').value)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="antidepressants">
+                <h3>Antidepressants</h3>
+                <div>
+                    <label>Fluoxetine</label>
+                    <input type="number" id="fluoxetine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('fluoxetine',document.getElementById('fluoxetine').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Sertraline</label>
+                    <input type="number" id="sertraline" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('sertraline',document.getElementById('sertraline').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Citalopram</label>
+                    <input type="number" id="citalopram" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('citalopram',document.getElementById('citalopram').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Amitriptyline</label>
+                    <input type="number" id="amitriptyline" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('amitriptyline',document.getElementById('amitriptyline').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Mirtazapine</label>
+                    <input type="number" id="mirtazapine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('mirtazapine',document.getElementById('mirtazapine').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Venlafaxine</label>
+                    <input type="number" id="venlafaxine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('venlafaxine',document.getElementById('venlafaxine').value)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="antihistamines">
+                <h3>Antihistamines</h3>
+                <div>
+                    <label>Loratadine</label>
+                    <input type="number" id="loratadine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('loratadine',document.getElementById('loratadine').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Cetirizine</label>
+                    <input type="number" id="cetirizine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('cetirizine',document.getElementById('cetirizine').value)">Add to Cart</button>
+                    </div>
+
+                </div>
+                <div>
+                    <label>Fexofenadine</label>
+                    <input type="number" id="fexofenadine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('fexofenadine',document.getElementById('fexofenadine').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Diphenhydramine</label>
+                    <input type="number" id="diphenhydramine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('diphenhydramine',document.getElementById('diphenhydramine').value)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="antihypertensives">
+                <h3>Antihypertensives</h3>
+                <div>
+                    <label>Lisinopril</label>
+                    <input type="number" id="lisinopril" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('lisinopril',document.getElementById('lisinopril').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Amlodipine</label>
+                    <input type="number" id="amlodipine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('amlodipine',document.getElementById('amlodipine').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Metoprolol</label>
+                    <input type="number" id="metoprolol" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('metoprolol',document.getElementById('metoprolol').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Losartan</label>
+                    <input type="number" id="losartan" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('losartan',document.getElementById('losartan').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Hydrochlorothiazide</label>
+                    <input type="number" id="hydrochlorothiazide" min="0" placeholder="Quantity">
+                    <div class="button" >
+                        
+                        <button class="cart-button" onclick="addItemToCart('hydrochlorothiazide',document.getElementById('hydrochlorothiazide').value)">Add to Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <label>Clonidine</label>
+                    <input type="number" id="clonidine" min="0" placeholder="Quantity">
+                    <div class="button">
+                        
+                        <button class="cart-button" onclick="addItemToCart('clonidine',document.getElementById('clonidine').value)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        
+        <div id="cart">
+            <h2>Your Cart</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td id="totalPrice">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--<a href="D:\apiit\web\assingment 2\Assignment final\Assignment final\paymentpage.html"></a>-->
+            <button id="buyNow" onclick="goToCheckout()" >Buy Now</button>
+            <button id="saveFavorites" onclick="saveFavorites()">Add to Favorites</button>
+            <button id="applyFavorites"onclick="applyFavorites()">Apply Favorites</button>
+            
+            <button id="clearCart" onclick="clearCart()">Clear Cart></button>
+        </div>
+
+        
+        <script src="pharmacy.js"></script>
+    </div>
+
+
+    <div class="subbox">
+        <div class="title">
+            <h3>Apply Your Own Prescription</h3>
+        </div>
+        
+    </div>
+    <div class="parent">
+    <div class="block3">
+        <div class="container">
+            <div><input type="text" id="Fname" placeholder="Fname"></div>
+            <div><input type="text" id="Lname" placeholder="Lname"></div>
+            <div><input type="text" id="Age" placeholder="Age"></div>
+            <div class="gender">
+                <p><b>Gender</b></p>
+                <input type="radio" id="male" name="gender">
+                <label for="gender">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="gender">Female</label>
             </div>
-            <div class="navMid">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="doctors.html">DOCTORS</a></li>
-                        <li><a href="services.html">SERVICES</a></li>
-                        <li><a href="pharmacy.html">PHARMACY</a></li>
-                        <li><a href="E-channelling.html">E-CHANNELING</a></li>
-                        <li><a href="aboutus.html">ABOUT US</a></li>
-                        <li><a href="register.html">REGISTER</a></li>
-                    </ul>
-                </nav>
+            <div><input type="text" id="Contactno" placeholder="Contact No (Mobile)"></div>
+            <div><input type="text" id="nic" placeholder="NIC"></div>
+            <div><input type="email" id="e-mail" placeholder="E-mail"></div>
+            <div class="prescription">
+                <p><b>image of the prescription</b></p>
+                <div class="button">
+                    <a href="#">Choose File</a>
+                </div>
             </div>
-            <div class="Navright">
-                <input type="text" id="searchBar" placeholder="search">
+            <div class="Comments">
+                <input type="text" id="comments" placeholder="comments">
+            </div>
+            <div class="btnparent">
+                <div class="submit">
+                    <a href="#">SUBMIT</a>
+                </div>
+                <div class="reset">
+                    <a href="#">RESET</a>
+                </div>
             </div>
         </div>
-        <div class="block1">
-            <div class="title">
-                <h3>Browse Through Our Wares</h3>
-            </div>
-            <div class="paragraph">
-                <p>
-                    Discover a wide selection of medical products and services at Harmony Health Care. Our curated offerings are designed to support 
-                    your health and well-being, providing high-quality solutions tailored to your needs. Explore our range and find the right tools 
-                    to enhance your health journey.
-                </p>
-            </div>
-        </div>
-        <div class="block2">
-            <div class="box1">
-                <img src="media/setho.jpeg" alt="hospital-image" width="100%">
-                <div class="title">
-                    SETHOSCOPES
-                </div>
-                <div class="button">
-                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
-                </div> 
-            </div>
-            <div class="box2">
-                <img src="media/bp.jpg" alt="hospital-image" width="100%">
-                <div class="title">
-                    BLOOD PRESSURE MONITORS
-                </div>
-                <div class="button">
-                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
-                </div>
-            </div>
-            <div class="box3">
-                <img src="media/Blood sugar.jpeg" alt="hospital-image" width="100%">
-                <div class="title">
-                    BLOOD SUGAR MONITORS
-                </div>
-                <div class="button">
-                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
-                </div>
-            </div>
-            <div class="box4">
-                <img src="media/wheel chair.jpg" alt="hospital-image" width="100%">
-                <div class="title">
-                    WHEELCHAIRS
-                </div>
-                <div class="button">
-                    <a href="#">view more <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
-                </div>
-            </div>
-        </div>
-        <div class="subbox">
-            <div class="title">
-                <h3>Bring Your Medicine In To Your Footstep</h3>
-            </div>
-            <div class="paragraph">
-                <p>
-                    At Harmony Health Care, we offer convenient delivery services to bring your prescribed medications directly to your doorstep. <br>
-                    Our reliable and efficient service ensures you receive your medicines promptly and safely, making managing your health easier and more accessible.
-                </p>
-            </div>
-        </div>
-        <div class="parent">
-        <div class="block3">
+    </div>
+    </div>
+    <div class="newsletter">
+        <div class="leftblock">
+            <h3>subscribe to our newsletter service</h3>
+            <p>
+                Stay connected with Harmony Health Care by subscribing to our newsletter service. Our regular updates deliver a
+                wealth of information directly to your inbox, including the latest health tips, important hospital news,
+                and upcoming events. By subscribing, you'll be the first to learn about new services, health promotions,
+                and community initiatives. Our newsletter is designed to keep you informed and engaged with valuable insights
+                that support your well-being and enhance your experience with us.
+            </p>
             <div class="container">
-                <div><input type="text" id="Fname" placeholder="Fname"></div>
-                <div><input type="text" id="Lname" placeholder="Lname"></div>
-                <div><input type="text" id="Age" placeholder="Age"></div>
-                <div class="gender">
-                    <p><b>Gender</b></p>
-                    <input type="radio" id="male" name="gender">
-                    <label for="gender">Male</label>
-                    <input type="radio" id="female" name="gender">
-                    <label for="gender">Female</label>
+                <input type="email" id="email" placeholder="enter your e-mail">
+                <div class="button">
+                    <a href="#">Submit</a>
                 </div>
-                <div><input type="text" id="Contactno" placeholder="Contact No (Mobile)"></div>
-                <div><input type="text" id="nic" placeholder="NIC"></div>
-                <div><input type="email" id="e-mail" placeholder="E-mail"></div>
-                <div class="prescription">
-                    <p><b>image of the prescription</b></p>
-                    <div class="button">
-                        <a href="#">Choose File</a>
-                    </div>
-                </div>
-                <div class="Comments">
-                    <input type="text" id="comments" placeholder="comments">
-                </div>
-                <div class="btnparent">
-                    <div class="submit">
-                        <a href="#">SUBMIT</a>
-                    </div>
-                    <div class="reset">
-                        <a href="#">RESET</a>
-                    </div>
-                </div>
-            </div>
+            </div>                    
         </div>
+        <div class="rightblock">
+            <img src="media/image6.jpeg" alt="image of a nurse" width="100%">
         </div>
-        <div class="newsletter">
-            <div class="leftblock">
-                <h3>subscribe to our newsletter service</h3>
-                <p>
-                    Stay connected with Harmony Health Care by subscribing to our newsletter service. Our regular updates deliver a
-                    wealth of information directly to your inbox, including the latest health tips, important hospital news,
-                    and upcoming events. By subscribing, you'll be the first to learn about new services, health promotions,
-                    and community initiatives. Our newsletter is designed to keep you informed and engaged with valuable insights
-                    that support your well-being and enhance your experience with us.
-                </p>
-                <div class="container">
-                    <input type="email" id="email" placeholder="enter your e-mail">
-                    <div class="button">
-                        <a href="#">Submit</a>
-                    </div>
-                </div>                    
-            </div>
-            <div class="rightblock">
-                <img src="media/image6.jpeg" alt="image of a nurse" width="100%">
-            </div>
-        </div>
-    </body>
+    </div> 
+</body>
 </html>
