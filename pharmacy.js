@@ -140,10 +140,10 @@ function generateCheckoutHTML() {
 }*/
 
 
-window.onload = () => {
-    document.getElementById("buyNow").addEventListener("click", goToCheckout);
-    document.getElementById("saveFavorites").addEventListener("click", saveFavorites);
-    document.getElementById("applyFavorites").addEventListener("click", applyFavorites);
+//window.onload = () => {
+    //document.getElementById("buyNow").addEventListener("click", goToCheckout);
+   // document.getElementById("saveFavorites").addEventListener("click", saveFavorites);
+   // document.getElementById("applyFavorites").addEventListener("click", applyFavorites);
 
 
 //   document.querySelectorAll("#categories input[type='number']").forEach(input => {
@@ -153,4 +153,4 @@ window.onload = () => {
         //    addItemToCart(itemId, quantity);
         //});
    // });
-}; 
+//}; 
