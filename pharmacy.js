@@ -32,6 +32,7 @@ const prices = {
 
 const cart = [];
 
+
 function addItemToCart(itemId, quantity) {
     quantity = Number(quantity);
     if (quantity > 0) {
