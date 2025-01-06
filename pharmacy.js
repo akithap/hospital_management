@@ -95,7 +95,7 @@ function goToCheckout() {
         alert("Your cart is empty!");
         return;
     }
-    document.location.href="D:/apiit/web/assingment 2/Assignment final/Assignment 2 final/paymentpage.html"
+    document.location.href="/D:/apiit/web/assingment 2/Assignment final/Assignment 2 final/paymentpage.html"
 
     /*const checkoutWindow = window.open("paymentpage.html", "_blank");
     checkoutWindow.onload = () => {
@@ -103,7 +103,7 @@ function goToCheckout() {
     };*/
 }
 
-/*/ Generate checkout HTML
+/*/ 
 function generateCheckoutHTML() {
     let orderDetails = "<h2>Your Order</h2><ul>";
     let total = 0;
