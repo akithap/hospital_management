@@ -95,7 +95,7 @@ function goToCheckout() {
         alert("Your cart is empty!");
         return;
     }
-    document.location.href="/paymentpage.html"
+    document.location.href="/hospital_management/paymentpage.html"
 
     /*const checkoutWindow = window.open("paymentpage.html", "_blank");
     checkoutWindow.onload = () => {
